@@ -369,9 +369,21 @@ From screenshot 34, it is seen that I pass the environment details file and scor
 
 ![image](https://user-images.githubusercontent.com/77330289/148543135-3c05b07a-fbbf-4bca-a18a-17b300ca8cb9.png)
 
+Screenshot 35: Model deployment status.
+
+From screenshot 35 it is seen that the deployment state is healthy.  It is also seen that the model logs are also showing.
+
 ![image](https://user-images.githubusercontent.com/77330289/148543977-82c512a0-37d9-4a6c-8314-fbae5710bf76.png)
 
+Screenshot 36: Deployed model endpoint.
+
+Screenshot 36 was taken from the endpoints section in Azure Machine Learning Studio and lists the deployed model endpoint.
+
 ![image](https://user-images.githubusercontent.com/77330289/148544083-6ee64599-19bc-4341-af62-6a4dbee466c0.png)
+
+Screenshot 37: Deployed endpoint details.
+
+Screenshot 37 provides the details of the deployed endpoint and can be found when clicking on the endpoint in screenshot 36.  In this screenshot it can be seen that the deployment state is healthy, authentication is enabled and application insights is also enabled.  The resp endpoint and swagger URI is also provided.
 
 ![image](https://user-images.githubusercontent.com/77330289/148544190-dae46928-5e5b-4008-b538-11d0ce8bcd8c.png)
 
