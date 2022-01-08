@@ -487,7 +487,13 @@ headers["Authorization"] = f"Bearer {key}"
 response = requests.post(scoringuri, input_data, headers=headers)
 print(response.json())
 ```
+This code stores the deployed model scoring uri, stores the primary key, stores two sampole inputs for scoring, creates a header which sets the content typ to applicatio/json and authorization with Bearer token, and finaly it posts the request.
 
+![image](https://user-images.githubusercontent.com/77330289/148654481-b2972a0d-9508-47a2-99aa-0b6de68d7c56.png)
+
+Screenshot 39: Output of the request sent.
+
+Screenshot 39 provides the output of the scoring request.  The first sample input returned a prediction of 1 which is malignant and the second sample returned a 0 which is benign.
 
 ## Deleting compute resources
 
