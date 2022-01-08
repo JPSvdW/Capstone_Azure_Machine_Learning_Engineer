@@ -307,10 +307,7 @@ Deployed and healthy screenshot
 ![image](https://user-images.githubusercontent.com/77330289/148554535-488e5bc8-e576-4d4f-b696-63849d9abd5f.png)
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+A screen recording of this project can be accessed by this [link.](https://youtu.be/jTq5RRj3R8c)
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
