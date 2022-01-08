@@ -387,7 +387,10 @@ Screenshot 37 provides the details of the deployed endpoint and can be found whe
 
 ![image](https://user-images.githubusercontent.com/77330289/148544190-dae46928-5e5b-4008-b538-11d0ce8bcd8c.png)
 
-Deployed and healthy screenshot
+Screenshot 38: Endpoint consume tab.
+
+Screenshot 38 shows the consume tab of the deployed model endpoint.  From here we can get the REST endpoint address and also the authentication keys.
+
 
 ## Deleting compute resources
 
