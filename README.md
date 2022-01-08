@@ -13,7 +13,7 @@ The first step after setting up a workspace for Azure Machine Learning Studio is
 
 Screenshot 1: Compute instance.
 
-Screenshot 1 shows that I have created a compute instance called "breast-cancer-compute".
+Screenshot 1 shows that I have created a compute instance called "breast-cancer-compute".  I used a STANDARD_DS3_V2 compute instance.
 
 ## Dataset
 The dataset is publicly available on the Kaggle website.  The dataset was created from a study done on breast cancer.  The attributes were created from a digitized image of a fine needle aspirate (FNA) of a breast mass.  The end goal of this dataset is to predict whether the breast mass of a patient is malignant or benign.
