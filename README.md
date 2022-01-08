@@ -313,28 +313,47 @@ Screenshot 27 shows an overview of the details from the best Hyperdrive model th
 ### Results
 
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+The best hyperdrive model had an accuracy of approximately 96%.  The hyperparameter values for this model:
+- Regularization strength of 0.31218517931449213
+- Maximum iteration of 50
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+One way to improve the accuracy of this model is to take the regularization strength value and maximum iteration from this model and refine it with a Grid Parameter Sampling method. 
 
 ![image](https://user-images.githubusercontent.com/77330289/148542279-a07630f0-1567-4345-8f43-76bbe1cc8b0e.png)
 
+Screenshot 28: RunDetails widget with run list.
+
+Screenshot 28 provides the completed run list of the Hyperdrive experiment.
+
 ![image](https://user-images.githubusercontent.com/77330289/148542334-f0f60e96-df45-4288-8ae5-f39d2ef7ad2a.png)
+
+Screenshot 29: RunDetials widget showing graph of run accuracies.
+
+Screenshot 29 provides a graph of the accuracy for each completed run.
 
 ![image](https://user-images.githubusercontent.com/77330289/148542421-2c18c1ad-d05b-4dbc-afc0-6918b6948d1c.png)
 
-Widget screenshots
+Screenshot 30: Hyperdrive experiment output.
+
+Screenshot 30 provides a text based output of the completed Hyperdrive experiment.
 
 ![image](https://user-images.githubusercontent.com/77330289/148542589-b80c88e3-8dc4-4b0a-9672-d5c1e636551f.png)
 
+Screenshot 31: Detailed information from the best Hyperdrive model.
+
+Screenshot 31 provides in depth information regarding the best model from the Hyperdrive experiment.
+
 ![image](https://user-images.githubusercontent.com/77330289/148542628-bd1df1c3-a955-4703-af02-a7cd7903938b.png)
 
-Best model screenshots
+Screenshot 32: Summary of the best Hyperdrive model.
+
+Screenshot 32 provides a summary of the best Hyperdrive model.  The run Id, status, best run accuracy of ~96%, and the hyperparameter values of the best model is shown.
 
 ![image](https://user-images.githubusercontent.com/77330289/148542688-dffc2e4e-71e9-4138-b87b-696ee72a2dfe.png)
 
-Save and register model screenshot
+Screenshot 33: Save and register model.
 
-
+Screenshot 33 provides confirmation that the best Hyperdrive model has been saved and registered.
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
