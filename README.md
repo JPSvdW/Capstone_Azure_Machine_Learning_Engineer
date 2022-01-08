@@ -494,6 +494,10 @@ Screenshot 39: Output of the request sent.
 
 Screenshot 39 provides the output of the scoring request.  The first sample input returned a prediction of 1 which is malignant and the second sample returned a 0 which is benign.
 
+## Future improvements
+
+Although the accuracy of the models in this project are quite good.  Some improvements can be done to increase the accuracy of the models.  On suggestion could be to introduce nearal networks.  Neural networks tend to extract more dependencies between feature and could lead to more accurate models.  Another suggestion could be to look at metric other than accuracy.  By looking at other metrics a machine learning engineer can ensure that his machine learning model is optimally trained without under fitting or over fitting.
+
 ## Deleting compute resources
 
 ![image](https://user-images.githubusercontent.com/77330289/148554501-55121340-1c03-4f50-80e6-1d9908eafee8.png)
