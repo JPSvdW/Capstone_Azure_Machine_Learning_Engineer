@@ -236,8 +236,17 @@ A Voting Ensemble model combines the outputs of multiple algorithms.  The final 
 The accuracy of the model could be improved by increasing the experimant duration.  This would give increase training time which might lead to better model accuracy.  If a medical practitioner has in depth knowledge it can help to do specific feature engineering and provide those specific features rather that allowing AutoML to automate it.  This could also possibly improve the accuracy of the final model.
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
+I chose to use a logistic regression model to predict wheter the tissue from a breast tumor is benign or malignant.  I chose this model due to its simplicity with regards to implementation and interpretation, and low computational needs.  I have chosen to optimize the following two parameters:
+- Regularization strength C with uniform search space of (0.1, 1)
+- maximum iteration with a choice of (50, 100, 150, 200, 250)
+
+I chose a random parameter sampling method due to it saving computational resources.  Although this sampling method saves on computational resources it still produces reasonably good models.  Sampling methods like Grid Parameter Sampling, will use every value within a search space thus using significantly more computational resources.  The Random Parameter Sampling method also allows for early termination policies.  This allows for the termination of runs performing poorly.
+
+I chose an early termination policy called BanditPolicy.  This is one of the more aggressive policies, allowing to stop more runs.  This type of early termination policy results in significat reduction of computation time. The following parameters were used in the BanditPolicy:
+- evaluation_interval = 1, this is the frequency at which the policy will be applied. 
+- slack_factor = 0.1, this is the amount of slack between a executing run and the best performing training run.
+- delay_evaluation = 4, number of interval to delay the policy and avoids premature termination.
 
 ### Results
 
