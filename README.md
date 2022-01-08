@@ -1,11 +1,13 @@
 # Predicting whether a breast mass is malignant or benign.
 
-This is the final project for the Udacity Machine Learning Engineer with Microsoft Azure Nanodegree Program.  In this project I will attempt to predict whether a tumor in a patient's breast is benign or malignant.  I have used a [dataset](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data) from Kaggle based on a medical study done.  
+This is the final project for the Udacity Machine Learning Engineer with Microsoft Azure Nanodegree Program.  In this project I will attempt to predict whether a tumor in a patient's breast is benign or malignant.  I have used a [dataset](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data) from Kaggle based on a medical study done.
 
-*TODO:* Write a short introduction to your project.
+I will use two methods to create a machine learning model.  The first method to create a machine learning model will be AutoML and the second method will be Hyperdrive.  After creating a model from each of these methods, I will then deploy the model with the highest accuracy as a web service using an Azure Container Instance (ACI).  therafter I will submit a request to the deployed web service and obtain a prediction whether the tumor tissue is benign or malignant.  Finally I will convert the chosen model to an onnx model and terminate all services and compute resources.
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
+
+The first step after setting up a workspace for Azure Machine Learning Studio is to add a compute instance in order to execute code in my Jupyter notebooks.
 
 ## Dataset
 The dataset is publicly available on the Kaggle website.  The dataset was created from a study done on breast cancer.  The attributes were created from a digitized image of a fine needle aspirate (FNA) of a breast mass.  The end goal of this dataset is to predict whether the breast mass of a patient is malignant or benign.
