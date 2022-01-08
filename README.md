@@ -391,6 +391,103 @@ Screenshot 38: Endpoint consume tab.
 
 Screenshot 38 shows the consume tab of the deployed model endpoint.  From here we can get the REST endpoint address and also the authentication keys.
 
+The folowing is the code used to interact with the deployed model rest endpoint.
+
+```
+import requests
+import json
+
+scoringuri = service.scoring_uri
+
+key = service.get_keys()[0]
+
+#print(scoringuri)
+#print(key)
+
+data = {
+  "Inputs": {
+    "data": [
+      {
+        "radius_mean": 18.0,
+        "texture_mean": 10.40,
+        "perimeter_mean": 122.9,
+        "area_mean": 1002,
+        "smoothness_mean": 0.1185,
+        "compactness_mean": 0.2778,
+        "concavity_mean": 0.3002,
+        "concave points_mean": 0.1473,
+        "symmetry_mean": 0.2420,
+        "fractal_dimension_mean": 0.07873,
+        "radius_se": 1.096,
+        "texture_se": 0.9054,
+        "perimeter_se": 8.590,
+        "area_se": 153.6,
+        "smoothness_se": 0.00640,
+        "compactness_se": 0.04906,
+        "concavity_se": 0.05375,
+        "concave points_se": 0.01588,
+        "symmetry_se": 0.03004,
+        "fractal_dimension_se": 0.006195,
+        "radius_worst": 25.40,
+        "texture_worst": 17.40,
+        "perimeter_worst": 184.8,
+        "area_worst": 2020,
+        "smoothness_worst": 0.1625,
+        "compactness_worst": 0.6658,
+        "concavity_worst": 0.7120,
+        "concave points_worst": 0.2656,
+        "symmetry_worst": 0.4603,
+        "fractal_dimension_worst": 0.1190
+      },
+      {
+        "radius_mean": 13.56,
+        "texture_mean": 14.37,
+        "perimeter_mean": 87.50,
+        "area_mean": 567.0,
+        "smoothness_mean": 0.09778,
+        "compactness_mean": 0.08130,
+        "concavity_mean": 0.06666,
+        "concave points_mean": 0.04783,
+        "symmetry_mean": 0.1886,
+        "fractal_dimension_mean": 0.05768,
+        "radius_se": 0.2700,
+        "texture_se": 0.7888,
+        "perimeter_se": 2.060,
+        "area_se": 24.0,
+        "smoothness_se": 0.008470,
+        "compactness_se": 0.0147,
+        "concavity_se": 0.02388,
+        "concave points_se": 0.01316,
+        "symmetry_se": 0.0199,
+        "fractal_dimension_se": 0.0024,
+        "radius_worst": 15.12,
+        "texture_worst": 19.30,
+        "perimeter_worst": 99.9,
+        "area_worst": 712.0,
+        "smoothness_worst": 0.145,
+        "compactness_worst": 0.1775,
+        "concavity_worst": 0.240,
+        "concave points_worst": 0.1289,
+        "symmetry_worst": 0.2979,
+        "fractal_dimension_worst": 0.07260
+      }
+    ]
+  },
+  "method": "predict"
+}
+input_data = json.dumps(data)
+#print(input_data)
+with open("data.json", "w") as _f:
+    _f.write(input_data)
+
+
+headers = {"Content-Type": "application/json"}
+headers["Authorization"] = f"Bearer {key}"
+
+response = requests.post(scoringuri, input_data, headers=headers)
+print(response.json())
+```
+
 
 ## Deleting compute resources
 
