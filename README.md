@@ -356,7 +356,8 @@ Screenshot 33: Save and register model.
 Screenshot 33 provides confirmation that the best Hyperdrive model has been saved and registered.
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+
+The model with the best accuracy of approximately 98% and was obtained from the AutoML experiment.  The Hyperdrive model had a accuracy of approximately 96%.  Therefore I will deploy the best model from the AutoML experiment.
 
 ![image](https://user-images.githubusercontent.com/77330289/148542886-c3894dab-eea8-4ba8-8678-6de7715a464c.png)
 
@@ -367,11 +368,6 @@ Screenshot 33 provides confirmation that the best Hyperdrive model has been save
 ![image](https://user-images.githubusercontent.com/77330289/148544083-6ee64599-19bc-4341-af62-6a4dbee466c0.png)
 
 ![image](https://user-images.githubusercontent.com/77330289/148544190-dae46928-5e5b-4008-b538-11d0ce8bcd8c.png)
-
-![image](https://user-images.githubusercontent.com/77330289/148546220-3c60c216-619a-44f5-8df2-4f2ddc59dbe2.png)
-
-![image](https://user-images.githubusercontent.com/77330289/148546267-2b06c5b2-5c9c-493d-923d-623ef31a40db.png)
-
 
 Deployed and healthy screenshot
 
