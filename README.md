@@ -9,6 +9,12 @@ I will use two methods to create a machine learning model.  The first method to 
 
 The first step after setting up a workspace for Azure Machine Learning Studio is to add a compute instance in order to execute code in my Jupyter notebooks.
 
+![image](https://user-images.githubusercontent.com/77330289/148642992-251d47c7-1b8e-49d0-b3e0-3011193c9984.png)
+
+Screenshot 1: Compute instance.
+
+Screenshot 1 shows that I have created a compute instance called "breast-cancer-compute".
+
 ## Dataset
 The dataset is publicly available on the Kaggle website.  The dataset was created from a study done on breast cancer.  The attributes were created from a digitized image of a fine needle aspirate (FNA) of a breast mass.  The end goal of this dataset is to predict whether the breast mass of a patient is malignant or benign.
 The dataset contains 30 attributes for each of the 569 patients and a single outcome or diagnosis.
