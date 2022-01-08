@@ -56,7 +56,7 @@ This dataset was downloaded and uploaded to this repository from Kaggle.com and 
 - In my "automl.ipynb" Notebook I had registered the dataset on Azure Machine Learning Studio.
 
 ## Automated ML
-In my "automl.ipynb" I executed a series of cells containing code that would create a machine learning model, save and register the best model from this experiment, and finaly deploy the model as the model with the best accuracy was obtained from the AutoML ecperiment.  The following is an overview of cells that were executed:
+In my "automl.ipynb" I executed a series of cells containing code that would create a machine learning model, save and register the best model from this experiment, and finaly deploy the model as the model with the best accuracy was obtained from the AutoML experiment.  The following is an overview of cells that were executed:
 
 1) Import all dependencies that will be used in this notebook.
 2) Show my workspace, resource group, subscription details and choose a name for my experiment.
@@ -248,22 +248,75 @@ I chose an early termination policy called BanditPolicy.  This is one of the mor
 - slack_factor = 0.1, this is the amount of slack between a executing run and the best performing training run.
 - delay_evaluation = 4, number of interval to delay the policy and avoids premature termination.
 
-### Results
+In this section i executed a number of code cells from my "hyperparameter_tuning.ipynb" Notebook.  The following is an overview of steps executed in this notebook:
+1) Import all dependencies.
+2) Load, show first few lines of the dataset, and statistics.
+3) Choose an experiment name.
+4) Create a AML Compute Cluster or reuse if already exists.
 
-![image](https://user-images.githubusercontent.com/77330289/148545241-b8b33fc4-1d70-4945-bcf0-a1d49c1ab491.png)
+  ![image](https://user-images.githubusercontent.com/77330289/148545114-687edc03-83d0-48ee-bc87-906c5fa97981.png)
+  
+  Screenshot 20: re-use AML compute cluster created.
+  
+  Screenshot 20 provides confirmation that the AML compute cluster was created successfully.  This cluster will be re-used in this section.
+  
+5) Add Hyperdrive configuration and settings.
 
-![image](https://user-images.githubusercontent.com/77330289/148545296-00d3fae1-6c4e-4f3c-b025-c7e077e7900a.png)
+  ![image](https://user-images.githubusercontent.com/77330289/148651570-f3267ba3-cff3-46c3-befe-7d4c37140239.png)
+  
+  Screenshot 21: Hyperdrive settings and configuration.
+  
+  Screenshot 21 shows the Hyperdrive settings and configuration chosen.
 
-![image](https://user-images.githubusercontent.com/77330289/148545341-3a130a89-d6f2-4fd2-9fcf-29a07edaa1b4.png)
+6) Submit experiment.
 
-![image](https://user-images.githubusercontent.com/77330289/148545384-951bd145-f30e-4cd4-9ed0-da5e1107b441.png)
+  ![image](https://user-images.githubusercontent.com/77330289/148545241-b8b33fc4-1d70-4945-bcf0-a1d49c1ab491.png)
+  
+  Screenshot 22: Completed Hyperdrive experiment.
+  
+  Screenshot 22 provides confirmation that my Hyperdrive experiment has completed successfully.  This screenshot wass accessed under the experiments tab and clicking on "breast_cancer_hyperdrive_experiment".
 
-![image](https://user-images.githubusercontent.com/77330289/148545629-5406b19d-f850-4e9c-b754-d9464c09bad9.png)
+  ![image](https://user-images.githubusercontent.com/77330289/148545296-00d3fae1-6c4e-4f3c-b025-c7e077e7900a.png)
+  
+  Screenshot 23: Hyperdrive experiment details.
+  
+  Screenshot 23 provides some details on the best Hyperdrive model.  The screenshot was accessed by clicking on "quiet_river_p3hlx7x1" at the bottom of screenshot 22.
+
+  ![image](https://user-images.githubusercontent.com/77330289/148545341-3a130a89-d6f2-4fd2-9fcf-29a07edaa1b4.png)
+  
+  Screenshot 24: Hyperdrive experiment child runs.
+  
+  Screenshot 24 provides a visual view of the child runs completed during the Hyperdrive experiment.  This screen can be accessed under the child runs tab in screenshot 23.
+
+  ![image](https://user-images.githubusercontent.com/77330289/148545384-951bd145-f30e-4cd4-9ed0-da5e1107b441.png)
+  
+  Screenshot 25: List of child runs.
+  
+  Screenshot 25 shows the list of child runs completed.  This screen is shown when scrolling dow in screenshot 24.
+  
+  ![image](https://user-images.githubusercontent.com/77330289/148545629-5406b19d-f850-4e9c-b754-d9464c09bad9.png)
+  
+  Screenshot 26: Details of the best Hyperdrive run.
+  
+  Screenshot 26 provides details on the best Hyperdrive run.
+  
+8) Show RunDetails using widget.
+9) Provide details on the best Hyperdrive model.
+10) Save and register the best hyperdrive model.
 
 ![image](https://user-images.githubusercontent.com/77330289/148546021-f050c2ef-b757-4357-8f3b-f25101c8825d.png)
 
+Screenshot 27: Regestering best Hyperdrive model using Jupyter Notebook
+
+Screenshot 27 shows the code cell used in my Jupyter Notebook to register the best Hyperdrive model.
+
 ![image](https://user-images.githubusercontent.com/77330289/148546980-80053e78-bea4-4ccd-b7f7-68f379b73e2d.png)
 
+Screenshot 28: Details of the best hyperdrive model.
+
+Screenshot 28 shows an overview of the details from the best Hyperdrive model that was registered in Azure Machine Learning Studio.
+
+### Results
 
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
