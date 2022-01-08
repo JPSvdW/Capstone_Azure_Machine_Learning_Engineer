@@ -58,7 +58,7 @@ This dataset was downloaded and uploaded to this repository from Kaggle.com and 
 ## Automated ML
 In my "automl.ipynb" I executed a series of cells containing code that would create a machine learning model, save and register the best model from this experiment, and finaly deploy the model as the model with the best accuracy was obtained from the AutoML ecperiment.  The following is an overview of cells that were executed:
 
-1) Importi all dependencies that will be used in this notebook.
+1) Import all dependencies that will be used in this notebook.
 2) Show my workspace, resource group, subscription details and choose a name for my experiment.
 3) Create an AML Compute cluster.
 
@@ -178,10 +178,6 @@ The results from the AutoML experiment were as follow:
 - Best model = Voting Ensemble
 - Accuracy = ~ 98%
 
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
-
 ![image](https://user-images.githubusercontent.com/77330289/148541306-0b38ece2-387f-4c41-ba57-550a8db29ce6.png)
 
 Screenshot 13: RunDetails widget with list of models.
@@ -236,6 +232,8 @@ Screenshot 19 provides a view of the parametrs from the best AutoML model (Votin
 | svcwrapper - standardscalerwrapper | 0.23076923076923078 | 
 
 A Voting Ensemble model combines the outputs of multiple algorithms.  The final model consists of a wheighted sum of all the chosen algorithms' outputs.
+
+The accuracy of the model could be improved by increasing the experimant duration.  This would give increase training time which might lead to better model accuracy.  If a medical practitioner has in depth knowledge it can help to do specific feature engineering and provide those specific features rather that allowing AutoML to automate it.  This could also possibly improve the accuracy of the final model.
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
