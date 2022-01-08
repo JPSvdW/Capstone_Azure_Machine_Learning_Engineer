@@ -304,17 +304,11 @@ In this section i executed a number of code cells from my "hyperparameter_tuning
 9) Provide details on the best Hyperdrive model.
 10) Save and register the best hyperdrive model.
 
-![image](https://user-images.githubusercontent.com/77330289/148546021-f050c2ef-b757-4357-8f3b-f25101c8825d.png)
-
-Screenshot 27: Regestering best Hyperdrive model using Jupyter Notebook
-
-Screenshot 27 shows the code cell used in my Jupyter Notebook to register the best Hyperdrive model.
-
 ![image](https://user-images.githubusercontent.com/77330289/148546980-80053e78-bea4-4ccd-b7f7-68f379b73e2d.png)
 
-Screenshot 28: Details of the best hyperdrive model.
+Screenshot 27: Details of the best hyperdrive model.
 
-Screenshot 28 shows an overview of the details from the best Hyperdrive model that was registered in Azure Machine Learning Studio.
+Screenshot 27 shows an overview of the details from the best Hyperdrive model that was registered in Azure Machine Learning Studio.
 
 ### Results
 
