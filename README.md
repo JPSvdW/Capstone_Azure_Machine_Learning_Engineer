@@ -312,7 +312,6 @@ Screenshot 27 shows an overview of the details from the best Hyperdrive model th
 
 ### Results
 
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 The best hyperdrive model had an accuracy of approximately 96%.  The hyperparameter values for this model:
 - Regularization strength of 0.31218517931449213
 - Maximum iteration of 50
@@ -499,13 +498,26 @@ Screenshot 39 provides the output of the scoring request.  The first sample inpu
 
 ![image](https://user-images.githubusercontent.com/77330289/148554501-55121340-1c03-4f50-80e6-1d9908eafee8.png)
 
+Screenshot 40: Deleting Compute cluster.
+
+Screenshot 40 provides confirmation that the compute cluster has been deleted.
+
 ![image](https://user-images.githubusercontent.com/77330289/148554535-488e5bc8-e576-4d4f-b696-63849d9abd5f.png)
+
+Screenshot 41: Deleting Compute instance.
+
+Screenshot 41 provides confirmation that the compute instance has been deleted.
 
 ## Screen Recording
 A screen recording of this project can be accessed by this [link.](https://youtu.be/jTq5RRj3R8c)
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
+I decided to convert my best model from the AutoML experiment to a ONNX format as a standout suggestion.
 
 ![image](https://user-images.githubusercontent.com/77330289/148546137-3b2c7dde-4a22-47f1-83ef-a2e8c3354d82.png)
+
+Screenshot 42: Converting model to ONNX format.
+
+Screenshot 42 provides confirmation that I have converted my mydel with the best accuracy to a ONNX format.
 
